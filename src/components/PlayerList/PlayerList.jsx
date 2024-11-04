@@ -1,17 +1,17 @@
 import Player from "../Players/Player"
 import players from "../mockData/players"
-
+console.log(players)
 const PlayerList = () => {
   return (
     <div>
         {players.map((players, index) => (
     <Player
     key={index}
-    image={players.imageURL}
+    imgUrl={players.imageURL}
     name={players.name}
     team={players.team}
     number={players.jerseyNumber}
-    Age={players.age}
+    age={players.age}
     nationality={players.nationality}
     />
         ))}
